@@ -1,5 +1,5 @@
 # online_shop
-## Self-Directed Practicum: E-commerce Site Implemenation with Django
+## Self-Directed Practicum: E-commerce Site Implementation with Django
 
 ### Dependencies (pip install): ...
 

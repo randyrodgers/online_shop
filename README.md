@@ -1,7 +1,7 @@
 # online_shop
 ## Self-Directed Practicum: E-commerce Site Implementation with Django
 
-### Dependencies (pip install): ...
+### Dependencies (pip install): Django 3.0.*, 
 
 ### Initiate the server with: python manage.py runserver
 

@@ -3,7 +3,7 @@
 
 ### Dependencies
 pip install: <strong>Django 3.0.\*, Pillow 7.0.0, celery 4.4.2</strong><br>
-apt-get install: <strong>rabbitmq</strong>
+apt-get/brew install: <strong>rabbitmq</strong>
 
 ### Initiate the Server
 "python manage.py runserver"

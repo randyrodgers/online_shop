@@ -134,3 +134,21 @@ MEDIA_ROOT = os.path.join( BASE_DIR, 'media/' )
 CART_SESSION_ID = 'cart'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Braintree settings
+with open( 'myshop/secrets.json', 'r' ) as secret_key_file:
+    data = secret_key_file.read()
+    obj = json.loads( data )
+    BRAINTREE_MERCHANT_ID = str( obj[ 'MERCHANT_ID'] )  # Merchant ID
+    BRAINTREE_PUBLIC_KEY = str( obj[ 'PUBLIC_KEY'] )    # Public Key
+    BRAINTREE_PRIVATE_KEY = str( obj[ 'PRIVATE_KEY'] )  # Private Key
+    secret_key_file.close()
+
+import braintree
+
+BRAINTREE_CONF = braintree.Configuration(
+    braintree.Environment.Sandbox,
+    BRAINTREE_MERCHANT_ID,
+    BRAINTREE_PUBLIC_KEY,
+    BRAINTREE_PRIVATE_KEY
+)

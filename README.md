@@ -2,7 +2,7 @@
 ## Self-Directed Practicum: E-commerce Site Implementation with Django
 
 ### Dependencies
-pip install: <strong>Django 3.0.\*, Pillow 7.0.0, celery 4.4.2, flower 0.9.3</strong><br>
+pip install: <strong>Django 3.0.\*, Pillow 7.0.0, celery 4.4.2, flower 0.9.3, WeasyPrint 51</strong><br>
 apt-get/brew install: <strong>rabbitmq</strong>
 
 ### Initiate the Server

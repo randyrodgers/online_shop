@@ -3,7 +3,7 @@
 
 ### Dependencies
 pip install: <strong>Django 3.0.\*, Pillow 7.0.0, celery 4.4.2, flower 0.9.3, WeasyPrint 51</strong><br>
-apt-get/brew install: <strong>rabbitmq</strong>
+brew install: <strong>rabbitmq, python3, cairo, pango, gdk-pixbuf, libffi</strong>
 
 ### Initiate the Server
 "python manage.py runserver"
